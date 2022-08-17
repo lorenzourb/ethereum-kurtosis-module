@@ -7,3 +7,9 @@ Run it with [the CLI](https://docs.kurtosistech.com/installation.html) with:
 ```
 kurtosis module exec kurtosistech/ethereum-kurtosis-module
 ```
+
+https://www.techrepublic.com/article/how-to-build-a-docker-image-and-upload-it-to-docker-hub/
+docker build -t forked-eth1-kurtosis-module -f ./kurtosis-module/Dockerfile .
+docker image tag forked-eth1-kurtosis-module lorenzourbini/forked-eth1-kurtosis-module:latest
+docker image push lorenzourbini/forked-eth1-kurtosis-module:latest
+
